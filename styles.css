@@ -1,0 +1,20 @@
+:root{--bg:#f6f7fb;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--accent:#4f46e5;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+
+.site-header{padding:28px 20px;text-align:center;border-bottom:1px solid #e5e7eb;background:#fff;position:sticky;top:0;z-index:10}
+.site-header h1{margin:0;font-size:2rem}
+.tagline{margin:6px 0 0;color:var(--muted);font-size:0.95rem}
+
+.content{max-width:980px;margin:28px auto;padding:0 16px}
+.timeline{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:20px;border:1px solid #eef2f7}
+.timeline h2{margin-top:0}
+.updates-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.update-item{background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 14px}
+
+.site-footer{text-align:center; padding:18px; color:var(--muted); font-size:0.9rem}
+
+@media (min-width: 720px){
+  .content{display:flex;justify-content:center}
+  .timeline{width:100%}
+}
